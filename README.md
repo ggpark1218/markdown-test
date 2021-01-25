@@ -26,7 +26,7 @@
 
 ### 6. merge 2가지 설명 (fast-forward/Merge conflict)
 - **git merge *<Name>*** : <Name>브랜치를 현재의 브랜치로 병합
-# 1. fast-forward 방식
+##### 1. fast-forward 방식
    merge 할 브랜치의 commit이 현재 branch( 기준 브랜치, master 브랜치 )의 commit 보다 앞서가 있기 때문에, 기준 브랜치의 커밋을 대상 브랜치 commit으로 이동하겠다는 의미이다.
 1. master 브랜치에서 testing 브랜치로 이동
     `git checkout -b testing`
@@ -38,7 +38,7 @@
 `git merge <Name>`
 5. 커밋 구조를 보면 master 브랜치가 testing 브랜치 바로 뒤에 있기 때문에 이 경우 Git 은 단순히 master 브랜치가 testing 브랜치가 포인팅하고 있는 커밋을 포인팅하게 한다. 이것을 Fast-forward 병합이라고 한다.
 
-# 2. Merge conflict 방식
+##### 2. Merge conflict 방식
 1. 위 내용에서 3번까지 한 상황
 ![branch1](https://camo.githubusercontent.com/04c0b5678850c25e56df715d7393628c80e30437e27536cd4e9b2a174c8f91c8/68747470733a2f2f6769742d73636d2e636f6d2f626f6f6b2f656e2f76322f696d616765732f686561642d746f2d74657374696e672e706e67)
 2. master브랜치에서 main.c 수정
